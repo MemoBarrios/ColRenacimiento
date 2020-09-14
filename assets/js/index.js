@@ -5,7 +5,7 @@ function slideshowSwitch(slideshow,index,auto){
   if(slideshow.data('wait')) return;
 
   var slides = slideshow.find('.slide');
-  var pages = slideshow.find('.pagination');
+  var pages = slideshow.find('.pagination-slides');
   var activeSlide = slides.filter('.is-active');
   var activeSlideImage = activeSlide.find('.image-container');
   var newSlide = slides.eq(index);
@@ -35,7 +35,7 @@ function slideshowSwitch(slideshow,index,auto){
         activeSlide.removeClass('is-active');
         newSlide.css({display:'',zIndex:''});
         newSlideImage.css({opacity:''});
-        slideshow.find('.pagination').trigger('check');
+        slideshow.find('.pagination-slides').trigger('check');
         slideshow.data('wait',false);
         if(auto){
           timeout=setTimeout(function(){
@@ -136,7 +136,7 @@ function slideshowSwitch(slideshow,index,auto){
         left:''
       });
 
-      slideshow.find('.pagination').trigger('check');
+      slideshow.find('.pagination-slides').trigger('check');
       slideshow.data('wait',false);
       if(auto){
         timeout=setTimeout(function(){
@@ -185,13 +185,13 @@ $(document).ready(function() {
   slideshowNext($(this).closest('.slideshow'),$(this).hasClass('prev'));
 });
 
- $('.slideshow .pagination .item').on('click',function(){
+ $('.slideshow .pagination-slides .item-pagination').on('click',function(){
   slideshowSwitch($(this).closest('.slideshow'),$(this).index());
 });
 
- $('.slideshow .pagination').on('check',function(){
+ $('.slideshow .pagination-slides').on('check',function(){
   var slideshow=$(this).closest('.slideshow');
-  var pages=$(this).find('.item');
+  var pages=$(this).find('.item-pagination');
   var index=slideshow.find('.slides .is-active').index();
   pages.removeClass('is-active');
   pages.eq(index).addClass('is-active');
