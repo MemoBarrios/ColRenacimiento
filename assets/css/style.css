@@ -91,8 +91,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
   background: #47b2e4;
   color: #fff;
@@ -2312,11 +2312,8 @@ div.card div.content .btn:focus {
 	display: none;
 }
 #app-whatsapp{
-	bottom: 95px;
+	bottom: 24px;
   display: block;
-  left: 18pt;
-}
-#app-messenger{
   left: 18pt;
 }
 #app-messenger i, #app-whatsapp i{
@@ -2329,14 +2326,26 @@ div.card div.content .btn:focus {
 	color: #0084ff;	
 }
 
-.fb-dialog{
+/* .fb-dialog{
   left: 18pt !important;
   right: initial !important;
 }
 
 #ft-root iframe{
-  left: 9pt !important;
   right: initial !important;
+  left: 9pt !important;
+} */
+
+.fb_dialog_content iframe{
+  right:  initial !important;
+  left: 13pt !important;
+  bottom: 100px !important;
+}
+
+.fb-customerchat iframe{
+  right: initial !important;
+  left: 40pt !important;
+  bottom: 155px !important;
 }
 
 @media screen and (max-width: 766px){
@@ -2344,6 +2353,8 @@ div.card div.content .btn:focus {
 		display: none;
 	}
 	#app-messenger{
-		display: block;
+    display: block;
+    left: 13pt;
+    bottom: 100px;
 	}
 }
