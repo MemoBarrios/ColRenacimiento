@@ -148,7 +148,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #header .textLogo{
-      margin: 0 20px;
+      margin: 0 20px 0 10px;
+      font-size: 19px;
     }
 }
 
@@ -304,6 +305,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   z-index: 9998;
   border: 0;
+  padding: 7px 0 0 10px;
   background: none;
   font-size: 24px;
   transition: all 0.4s;
@@ -1518,6 +1520,18 @@ div.card div.content .btn:focus {
   opacity: 1;
 }
 
+@media (max-width: 420px) {
+  #portfolio-flters{
+    padding: 0 0;
+  }
+
+  .portfolio #portfolio-flters li {
+    margin: 10px 0;
+    font-size: 13px;
+    padding: 8px 8px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -2199,6 +2213,20 @@ div.card div.content .btn:focus {
   background: #209dd8;
 }
 
+/* FOOTER SOCIAL */
+
+#footer .cta {
+  padding: 50px 0 40px 0;
+  text-align: center;
+}
+
+#footer .cta i{
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* ---------------------------- */
+
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #fff;
@@ -2314,6 +2342,14 @@ div.card div.content .btn:focus {
 }
 
 @media (max-width: 768px) {
+  #footer .cta h3{
+    padding: 0 80px !important;
+  }
+
+  #footer .cta a{
+    padding: .375rem .25rem !important;
+  }
+
   #footer .footer-bottom {
     padding-top: 20px;
     padding-bottom: 20px;
