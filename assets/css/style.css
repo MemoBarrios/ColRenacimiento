@@ -5,6 +5,9 @@
   --font-serif: 'Cardo', serif;
   --dispositivo-md:600px;
   --dispositivo-lg:800px;
+  --color-base:rgb(39, 37, 98);
+  --color-secundario:rgb(12, 168, 72);
+  --color-retoque:rgb(247, 156, 17);
 }
 
 /*--------------------------------------------------------------
