@@ -1055,7 +1055,7 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .why-us .content {
-  padding: 60px 100px 0 100px;
+  padding: 0 100px 0 100px;
 }
 
 .why-us .content h3 {
@@ -1082,7 +1082,7 @@ section {
 }
 
 .why-us img {
-  padding: 70px 0 0 60px;
+  padding: 20px 0 0 60px;
 }
 
 .why-us .accordion-list {
@@ -1657,7 +1657,76 @@ div.card div.content .btn:focus {
 }
 
 /*--------------------------------------------------------------
-# GALERIA
+# Instalaciones Section
+--------------------------------------------------------------*/
+#gallery {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px;
+  overflow: hidden;
+}
+
+#gallery .owl-nav, #gallery .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#gallery .owl-item {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+#gallery .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#gallery .owl-dot.active {
+  background-color: #f82249;
+}
+
+#gallery .gallery-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+#gallery .gallery-carousel .center {
+  border: 6px solid #f82249;
+  margin: -10px;
+  box-sizing: content-box;
+  padding: 4px;
+  background: #fff;
+  z-index: 1;
+}
+
+#gallery .gallery-carousel .owl-item img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    background-attachment: scroll;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# METODOLOGIA
+--------------------------------------------------------------*/
+
+#Metodologia .metodologia-text {
+  line-height: 1.7rem;
+  text-align: justify;
+}
+
+
+/*--------------------------------------------------------------
+# PORTAFOLIO
 --------------------------------------------------------------*/
 .portfolio #portfolio-flters {
   list-style: none;
