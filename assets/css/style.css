@@ -1703,7 +1703,7 @@ div.card div.content .btn:focus {
 }
 
 #gallery .gallery-carousel .owl-item img {
-  width: 280px;
+  /*width: 280px; */
   height: 200px;
   object-fit: cover;
 }
