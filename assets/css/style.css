@@ -151,8 +151,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #header .textLogo{
-      margin: 0 20px 0 10px;
-      font-size: 19px;
+      margin: 0 20px 0 5px;
+      font-size: 18px;
     }
 }
 
@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   z-index: 9998;
   border: 0;
-  padding: 7px 0 0 10px;
+  padding: 19px 0 0 10px;
   background: none;
   font-size: 24px;
   transition: all 0.4s;
