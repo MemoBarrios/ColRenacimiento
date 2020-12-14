@@ -1708,6 +1708,10 @@ div.card div.content .btn:focus {
   object-fit: cover;
 }
 
+#gallery .section-title h2 {
+  color: #fff;
+}
+
 @media (max-width: 1024px) {
   .gallery {
     background-attachment: scroll;
